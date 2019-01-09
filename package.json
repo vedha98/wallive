@@ -1,0 +1,17 @@
+{
+  "name": "wallive",
+  "version": "1.0.0",
+  "description": "live wallpaper app",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^4.0.1",
+    "electron-wallpaper": "0.0.3",
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "vedhagnanam",
+  "license": "ISC"
+}
