@@ -4,10 +4,10 @@
 }
 
 body {
-  background: #360033;
-  background: -webkit-linear-gradient(left, #0b8793, #360033);
-  background: -o-linear-gradient(left, #0b8793, #360033);
-  background: linear-gradient(to right, #0b8793, #360033);
+  background: #2b5876;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
@@ -71,7 +71,7 @@ h1 {
   min-height: 22vw;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 .card .wrapper:hover .data {
   -webkit-transform: translateY(0);
@@ -110,7 +110,11 @@ h1 {
           transform: translateY(-60px);
 }
 .maincard .wrapper {
-  background: grey;;
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+padding: 20px;
 }
 .maincard .wrapper:hover .menu-content span {
   -webkit-transform: translate(-50%, -10px);
@@ -187,13 +191,14 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 3;
   transform: translate(-50%, -50%);
 }
  .sidebar{
   transform: translateX(-90%);
   height: 100%;
   width: 20%;
-  z-index: 99;
+  z-index:1;
   background-color: rgba(255, 255, 255, 0);
   transition: all 0.3s;
   position: fixed;
@@ -202,5 +207,11 @@ h1 {
   transform: translateX(0px);
   transition: all 0.3s;
   opacity: 100%;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255,0.8);
+}
+svg{
+width: 100%;
+height: 100%;
+padding: 20px;
+
 }
