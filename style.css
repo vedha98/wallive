@@ -12,10 +12,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 .pane {
-  background: #360033;
-  background: -webkit-linear-gradient(left, #0b8793, #360033);
-  background: -o-linear-gradient(left, #0b8793, #360033);
-  background: linear-gradient(to right, #0b8793, #360033);
+  background: #2b5876;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
@@ -110,7 +110,7 @@ h1 {
           transform: translateY(-60px);
 }
 .maincard .wrapper {
-  background: url(https://tvseriescritic.files.wordpress.com/2016/10/stranger-things-bicycle-lights-children.jpg) center/cover no-repeat;
+  background: grey;;
 }
 .maincard .wrapper:hover .menu-content span {
   -webkit-transform: translate(-50%, -10px);

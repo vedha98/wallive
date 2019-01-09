@@ -12,11 +12,8 @@ function createWindow () {
             };
 win = new BrowserWindow({width: 1920,
 height: 1080})
-  win1 = new BrowserWindow(windowProperties)
 
-  wallpaper.attachWindow(win1);
   win.loadFile('index.html')
-  win1.loadFile('window1.html')
 
 
   win.webContents.openDevTools()
